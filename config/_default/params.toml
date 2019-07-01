@@ -9,7 +9,7 @@ day_night = false
 
 # Font style.
 #   Choose from `default`, `classic`, or `playfair`.
-font = "default"
+font = "tom_font"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
 description = ""
@@ -52,7 +52,7 @@ time_format = "3:04 PM"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "tom@tomslee.net"
 phone = "(519) 555-1234"
-address = "178 Herbert Street, Waterloo, Ontario"
+address = "999 555 Street, Waterloo, Ontario"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = """"""

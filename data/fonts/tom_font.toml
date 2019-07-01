@@ -1,0 +1,22 @@
+# Font style metadata
+# This file taken from https://github.com/rbind/apreshill/blob/master/data/fonts/alison.toml 
+name = "tom_font"
+
+# Optional Google font URL
+# google_fonts = "Arapey:400,400i|Karla:400,700|Roboto+Mono"
+google_fonts = "Lora:400,400i|Karla:400,700|Roboto+Mono"
+
+# Font families
+# heading_font = "Arapey"
+# body_font = "Karla"
+# nav_font = "Karla"
+# mono_font = "Roboto Mono"
+heading_font = "Calibri"
+body_font = "Cambria"
+nav_font = "Consolas"
+mono_font = "Consolas"
+
+# Font size
+font_size = "18"
+font_size_small = "16"
+

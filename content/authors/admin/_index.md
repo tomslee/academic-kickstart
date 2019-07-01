@@ -1,6 +1,6 @@
 +++
 # Display name
-name = "Tom Slee"
+# name = "Tom Slee"
 
 # Username (this should match the folder name)
 authors = ["admin"]
@@ -9,7 +9,7 @@ authors = ["admin"]
 superuser = true
 
 # Role/position
-role = "This and that"
+#TS role = "This and that"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -28,7 +28,7 @@ interests = [
   "AI Ethics"
 ]
 
-# Organizational groups that you belong to (for People widget)
+# # # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups = ["Researchers", "Visitors"]
 
