@@ -4,7 +4,7 @@ name = "tom_font"
 
 # Optional Google font URL
 # google_fonts = "Arapey:400,400i|Karla:400,700|Roboto+Mono"
-google_fonts = "Lora:400,400i|Karla:400,700|Roboto+Mono"
+# google_fonts = "Lora:400,400i|Karla:400,700|Roboto+Mono"
 
 # Font families
 # heading_font = "Arapey"
@@ -18,5 +18,5 @@ mono_font = "Consolas"
 
 # Font size
 font_size = "18"
-font_size_small = "16"
+font_size_small = "14"
 
