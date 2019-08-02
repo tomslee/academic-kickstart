@@ -1,2 +1,8 @@
 public/
 .idea/
+org-content/auto/
+org-content/*.pdf
+
+*.bbl
+*.tex
+*.swp

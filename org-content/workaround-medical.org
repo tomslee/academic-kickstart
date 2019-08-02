@@ -1,19 +1,43 @@
+#+TITLE:     Workarounds in decision support systems
+#+SUBTITLE:  (work in progress)
+#+AUTHOR:    Tom Slee
+#+DATE:      \today
+#+EMAIL:     tom@tomslee.net
 #+HUGO_BASE_DIR: ../
-#+HUGO_SECTION: post/
+#+HUGO_SECTION: publication/
 #+HUGO_WEIGHT: auto
+#+HUGO_CUSTOM_FRONT_MATTER: :subtitle "(work in progress)" 
+#+HUGO_CUSTOM_FRONT_MATTER: :url_pdf pdf/workaround-medical.pdf
 #+HUGO_AUTO_SET_LASTMOD: t
+#+EXPORT_FILE_NAME: workaround-medical
+#+STARTUP: noindent align fold hidestars
+#+LATEX_CLASS: article_personal
+#+LATEX_CLASS_OPTIONS:[12pt]
+#+LATEX_HEADER: \setstretch{1.2}
+# #+LATEX_HEADER: \usepackage[superscript,biblabel]{cite}
+#+LATEX_HEADER: \usepackage[super]{natbib}
+#+LATEX_HEADER: \usepackage{tikz}
+#+OPTIONS: toc:nil
+#+PANDOC_OPTIONS: toc:nil
+#+PANDOC_OPTIONS: csl:new-harts.csl
+#+PANDOC_OPTIONS: reference-doc:oup_reference.docx
+#+PANDOC_METADATA: link-citations=true
+#+LANGUAGE:  en
+#+LATEX_COMPILER: pdflatex
+
+#+BEGIN_ABSTRACT
+/Researchers from Harvard and MIT warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([[https://science.sciencemag.org/content/363/6433/1287][Link]]) I think that's only half the story.../
+#+END_ABSTRACT
+
+#+TOC: headlines 2
 
 * Adversarial attacks and workarounds in medical machine learning
-  :PROPERTIES:
-  :EXPORT_FILE_NAME: medical-machine-learning
-  :EXPORT_DATE: 2019-07-28
-  :END:
-
-/Researchers from Harvard and MIT[fn:1] warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([[https://science.sciencemag.org/content/363/6433/1287][Link]]) I think that's only half the story.../
 
 It's not like the Harvard/MIT article is /purely/ about adversarial attacks. Early on the authors point out that the American medical claims approval process is plagued by many competing financial interests, "providers [i.e. doctors and hospitals] seeking to maximize and payers [insurance companies] seeking to minimize reinbursement." 
 
 But the remainder of the paper focuses almost exclusively on the problem of adversarial attacks by healthcare providers. Deep learning algorithms may be uncannily accurate over a well-defined data set, but they are also fragile if a sample steps in an unexpected direction, and this fragility leaves them open to "attack". Most blatantly, the authors show, doctors could modify medical images to change the diagnosis, even as the image appears unchanged to the human eye. Then there are grey areas, like rotations of an image, or a careful choice of words in notes, that pushes the system to give unexpected results. How should the medical system handle a techique that seems so accurate and yet so easily misled?
+
+* Workarounds
 
 Adversarial attacks are "inputs to a machine learning model that are intentionally crafted to force the model to make a mistake": that is, you take an input that the model classifies correctly and you tweak it so that it is classified incorrectly. /Workarounds/ are the opposite of adversarial attacks: inputs that are intentionally crafted to force the model to /correct/ a mistake. That is, you take an input that is incorrectly classified by the model and tweak it so that it is correctly classified. 
 
@@ -21,9 +45,13 @@ Even the best machine learning systems are, after all, statistical engines with 
 
 Adversarial examples may be novel, but in the automated workplace workarounds have become routine, even if they are often overlooked. Automated systems shift decision-making from "front line" workers to a system, but as these systems have entered the workplace, many professionals have learned a new and often unacknowledged skill: they have become experts at making the system work properly.
 
+
+#+CAPTION: Schematic view of a machine learning model. The data points are shown with their "true" values of blue or orange, and the background shade marks the areas that the model categorizes as "blue" or "orange". The adversarial example changes a correctly-classified "orange" data point into an incorrectly-classified one, while the /workaround/ changes an incorrectly-classified data point into a correctly classified one. The image was built from  [[https://playground.tensorflow.org][Tensorflow Playground]])
+[[file:tensorflow-playground.png]]
+
 As just one example, legal scholar Jennifer Raso explored the changing jobs of Ontario case workers when a new automated decision system was introduced. Instead of making their own judgements about client needs, case workers are now to enter data into the system, which would make a decision according to well-defined rules. She [[https://ssrn.com/abstract=3062620][writes about how the social service case workers responded]]: 
 
-#+begin_quote
+#+begin_kquote
 While new technologies may attempt to deskill and decentre front-line decision-makers, transforming them into data entry clerks, caseworkers learn how to expertly translate and input client data to produce decisions that more closely match their interpretation of clients’ needs and welfare laws. 
 #+end_quote
 
