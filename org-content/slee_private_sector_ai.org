@@ -23,6 +23,10 @@
 #+LANGUAGE:  en
 #+LATEX_COMPILER: pdflatex
 
+Tom Slee[fn:68]
+
+*Abstract*
+
 #+BEGIN_ABSTRACT
 /Algorithms that sort people into categories are plagued by incompatible incentives. While more accurate algorithms may address problems of statistical bias and unfairness, they cannot solve the ethical challenges that arise from incompatible incentives./
 
@@ -32,6 +36,7 @@
 #+END_ABSTRACT
 
 #+TOC: headlines
+
 
 * Performances and ethics
   :PROPERTIES:
@@ -1038,3 +1043,6 @@ Essential texts concerning the mechanisms and consequences of sorting.
 
 [fn:67] Lina M Khan, “Amazon's Antitrust Paradox,” /The Yale Law
         Journal/ 126 (2017): 710-- 805.
+
+[fn:68]Draft of a chapter contributed to the /Oxford Handbook of Ethics of Artificial Intelligence/, edited by Markus Dubber, Frank Pasquale, and Sunit Das, Oxford University Press 2019. This version March 31, 2019. The opinions expressed in this chapter are those of the author and do not represent the views or policies of SAP. This essay is also available at https://ssrn.com/abstract=3363342.
+ 

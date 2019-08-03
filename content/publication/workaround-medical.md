@@ -1,7 +1,7 @@
 +++
 title = "Workarounds in decision support systems"
 author = ["Tom Slee"]
-lastmod = 2019-08-02T16:40:06-04:00
+lastmod = 2019-08-02T21:48:43-04:00
 draft = false
 subtitle = "(work in progress)"
 url_pdf = "pdf/workaround-medical.pdf"
@@ -10,20 +10,9 @@ url_pdf = "pdf/workaround-medical.pdf"
 <div class="ABSTRACT">
   <div></div>
 
-_Researchers from Harvard and MIT warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([Link](https://science.sciencemag.org/content/363/6433/1287)) I think that's only half the story..._
+Researchers from Harvard and MIT warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([Link](https://science.sciencemag.org/content/363/6433/1287)) That's only half the story...
 
 </div>
-
-<div class="ox-hugo-toc toc">
-<div></div>
-
-<div class="heading">Table of Contents</div>
-
-- [Adversarial attacks and workarounds in medical machine learning](#adversarial-attacks-and-workarounds-in-medical-machine-learning)
-- [Workarounds](#workarounds)
-
-</div>
-<!--endtoc-->
 
 
 ## Adversarial attacks and workarounds in medical machine learning {#adversarial-attacks-and-workarounds-in-medical-machine-learning}
@@ -45,9 +34,7 @@ Adversarial examples may be novel, but in the automated workplace workarounds ha
 
 As just one example, legal scholar Jennifer Raso explored the changing jobs of Ontario case workers when a new automated decision system was introduced. Instead of making their own judgements about client needs, case workers are now to enter data into the system, which would make a decision according to well-defined rules. She [writes about how the social service case workers responded](https://ssrn.com/abstract=3062620):
 
-\#+begin\_kquote
-While new technologies may attempt to deskill and decentre front-line decision-makers, transforming them into data entry clerks, caseworkers learn how to expertly translate and input client data to produce decisions that more closely match their interpretation of clients’ needs and welfare laws.
-\#+end\_quote
+> While new technologies may attempt to deskill and decentre front-line decision-makers, transforming them into data entry clerks, caseworkers learn how to expertly translate and input client data to produce decisions that more closely match their interpretation of clients’ needs and welfare laws.
 
 The idea will be familiar to anyone who has read James C. Scott's [Seeing Like a State](https://yalebooks.yale.edu/book/9780300078152/seeing-state): certain schemes to improve the human condition assume, and impose, a simplified and idealized way of working and living that neglects the unruly irregularities of real life. Managed systems commonly rely on a certain level of workaround to even function: hence the effectiveness of the "work to rule" as a form of protest.
 

@@ -26,11 +26,10 @@
 #+LATEX_COMPILER: pdflatex
 
 #+BEGIN_ABSTRACT
-/Researchers from Harvard and MIT warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([[https://science.sciencemag.org/content/363/6433/1287][Link]]) I think that's only half the story.../
+Researchers from Harvard and MIT warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([[https://science.sciencemag.org/content/363/6433/1287][Link]]) That's only half the story...
 #+END_ABSTRACT
 
-#+TOC: headlines 2
-
+#+TOC: headlines 
 * Adversarial attacks and workarounds in medical machine learning
 
 It's not like the Harvard/MIT article is /purely/ about adversarial attacks. Early on the authors point out that the American medical claims approval process is plagued by many competing financial interests, "providers [i.e. doctors and hospitals] seeking to maximize and payers [insurance companies] seeking to minimize reinbursement." 
@@ -51,7 +50,7 @@ Adversarial examples may be novel, but in the automated workplace workarounds ha
 
 As just one example, legal scholar Jennifer Raso explored the changing jobs of Ontario case workers when a new automated decision system was introduced. Instead of making their own judgements about client needs, case workers are now to enter data into the system, which would make a decision according to well-defined rules. She [[https://ssrn.com/abstract=3062620][writes about how the social service case workers responded]]: 
 
-#+begin_kquote
+#+begin_quote
 While new technologies may attempt to deskill and decentre front-line decision-makers, transforming them into data entry clerks, caseworkers learn how to expertly translate and input client data to produce decisions that more closely match their interpretation of clients’ needs and welfare laws. 
 #+end_quote
 
