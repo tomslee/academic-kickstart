@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Essays"
-subtitle = "...and other publications"
+subtitle = "Some in progress, some complete, a few published elsewhere too."
 
 [content]
   # Page type to display. E.g. post, talk, or publication.

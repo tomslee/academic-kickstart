@@ -51,8 +51,8 @@ time_format = "3:04 PM"
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "tom@tomslee.net"
-phone = "(519) 555-1234"
-address = "999 555 Street, Waterloo, Ontario"
+# phone = "(519) 555-1234"
+# address = "999 555 Street, Waterloo, Ontario"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = """"""
@@ -63,7 +63,7 @@ appointment_url = ""
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
+  {icon = "twitter", icon_pack = "fab", name = "... or contact me on Twitter", link = "https://twitter.com/Twitter"},
   # {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
   ]
@@ -85,8 +85,8 @@ contact_links = [
 #   3: OpenStreetMap (Mapbox)
 map = 1
 map_api_key = "AIzaSyBrCa_lLBoxGFUhQMUn2gpb8H5_cioqe74"
-latitude = "-29.7302"
-longitude = "151.732158"
+latitude = "43.4643"
+longitude = "-80.5204"
 zoom = 13
 
 ############################
@@ -126,7 +126,6 @@ sharing = true
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "January 2006"
-
   # Citation style ("apa" or "mla")
   citation_style = "apa"
 
