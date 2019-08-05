@@ -1,23 +1,22 @@
-#+TITLE:     Workarounds in decision support systems
-#+SUBTITLE:  (work in progress)
+#+TITLE:   Medical machine learning and the importance of workarounds
 #+AUTHOR:    Tom Slee
 #+DATE:      \today
 #+EMAIL:     tom@tomslee.net
 #+HUGO_BASE_DIR: ../
 #+HUGO_SECTION: publication/
 #+HUGO_WEIGHT: auto
-#+HUGO_CUSTOM_FRONT_MATTER: :subtitle "(work in progress)" 
+# #+HUGO_CUSTOM_FRONT_MATTER: :subtitle "(work in progress)" 
 #+HUGO_CUSTOM_FRONT_MATTER: :url_pdf pdf/workaround-medical.pdf
 #+HUGO_AUTO_SET_LASTMOD: t
 #+EXPORT_FILE_NAME: workaround-medical
 #+STARTUP: noindent align fold hidestars
+#+OPTIONS: toc:nil
 #+LATEX_CLASS: article_personal
 #+LATEX_CLASS_OPTIONS:[12pt]
 #+LATEX_HEADER: \setstretch{1.2}
 # #+LATEX_HEADER: \usepackage[superscript,biblabel]{cite}
 #+LATEX_HEADER: \usepackage[super]{natbib}
 #+LATEX_HEADER: \usepackage{tikz}
-#+OPTIONS: toc:nil
 #+PANDOC_OPTIONS: toc:nil
 #+PANDOC_OPTIONS: csl:new-harts.csl
 #+PANDOC_OPTIONS: reference-doc:oup_reference.docx
@@ -26,59 +25,105 @@
 #+LATEX_COMPILER: pdflatex
 
 #+BEGIN_ABSTRACT
-Researchers from Harvard and MIT warn us about "Adversarial attacks on medical machine learning", in which "a small, carefully designed change in how inputs are presented to a system... completely alter its output, causing it to arrive at manifestly wrong conclusions." ([[https://science.sciencemag.org/content/363/6433/1287][Link]]) That's only half the story...
+/A recent paper highlights "adversarial attacks" by physicians as a threat to medical machine learning. Its recommendations may do more harm than good./
 #+END_ABSTRACT
+#+TOC: headlines 2 
 
-#+TOC: headlines 
-* Adversarial attacks and workarounds in medical machine learning
+* Adversarial examples
 
-It's not like the Harvard/MIT article is /purely/ about adversarial attacks. Early on the authors point out that the American medical claims approval process is plagued by many competing financial interests, "providers [i.e. doctors and hospitals] seeking to maximize and payers [insurance companies] seeking to minimize reinbursement." 
+The rise of deep learning has been accompanied by a fascination with "adversarial examples": the classic cases are striking because they cause amazingly accurate machine learning models to make amazingly stupid mistakes. A carefully designed tweak invisible to the human eye may cause an image-recognition system to mistake what is "obviously" a picture of a macaw for a picture of a bookcase.
 
-But the remainder of the paper focuses almost exclusively on the problem of adversarial attacks by healthcare providers. Deep learning algorithms may be uncannily accurate over a well-defined data set, but they are also fragile if a sample steps in an unexpected direction, and this fragility leaves them open to "attack". Most blatantly, the authors show, doctors could modify medical images to change the diagnosis, even as the image appears unchanged to the human eye. Then there are grey areas, like rotations of an image, or a careful choice of words in notes, that pushes the system to give unexpected results. How should the medical system handle a techique that seems so accurate and yet so easily misled?
+#+CAPTION: A slight perturbation of this picture of a macaw causes it to be classified as a bookcase.
+[[file:2019-ai-adversarial-macaw.png]]
+
+In the few years since their discovery, adversarial examples have been shown to be both ubiquitous and difficult to prevent. These "adversarial attacks", as they are also called, cast a doubt over whether deep learning systems can survive in the real world. Deep learning systems seem to have the potential for great accuracy over some dimensions, but also great fragility in others.
+
+The real-world implications of adversarial examples are going to be important topics over the next few years. One example of things to come is a recent paper in the prestigious Science magazine warning about [[https://science.sciencemag.org/content/363/6433/1287][Adversarial attacks on medical machine learning]] ([[https://www.ehidc.org/sites/default/files/resources/files/Adversarial%2520attacks%2520on%2520medical%2520machine%2520learning.pdf][full text PDF]])[fn:1]. It's no surprise that healthcare has been highlighted: investment in deep learning systems for healthcare is already massive. High-profile successes in "better than human" diagnosis from medical images, and the potential for extracting useful information from electronic health records have made for something of a gold rush. Eric Topol's new book [[https://www.basicbooks.com/titles/eric-topol/deep-medicine/9781541644649/][Deep Medicine]] charts some of the potential. However, the authors of the Science paper warn, the billions of dollars flowing through healthcare systems provide obvious incentives for "attackers" to corrupt the system for fraudulent purposes. If adversarial attacks are easy to make and difficult to defend against, then the promise of medical machine learning may never be realized.
+
+The Science paper, by researchers from Harvard and MIT, is my main topic here, but first we need to talk about a seemingly-humdrum topic that gets much less attention, but which turns out to be closely related.
 
 * Workarounds
 
-Adversarial attacks are "inputs to a machine learning model that are intentionally crafted to force the model to make a mistake": that is, you take an input that the model classifies correctly and you tweak it so that it is classified incorrectly. /Workarounds/ are the opposite of adversarial attacks: inputs that are intentionally crafted to force the model to /correct/ a mistake. That is, you take an input that is incorrectly classified by the model and tweak it so that it is correctly classified. 
+An adversarial attack is an input crafted intentionally to force a model to make a mistake. A workaround is the opposite: an input crafted intentionally to force a model to /correct/ a mistake.
 
-Even the best machine learning systems are, after all, statistical engines with non-zero error rates, so incorrectly classified examples will always be with us. And of course in the real world there are ambiguities in any data set, to the boundaries between classes are not as sharp as a labelled training set may make it seem.
+A schematic example is shown below. The data points are shown with their "true" values of blue or orange, and the background shade marks the regions categorized by the model as "blue" or "orange". The model has a high accuracy: most of the actually-blue dots lie in the categorized-as-blue region, and most of the actually-orange points lie in the categorized-as-orange region. But even the best machine learning systems are  statistical engines with non-zero error rates, so you can see a few incorrectly classified examples in the diagram too.
 
-Adversarial examples may be novel, but in the automated workplace workarounds have become routine, even if they are often overlooked. Automated systems shift decision-making from "front line" workers to a system, but as these systems have entered the workplace, many professionals have learned a new and often unacknowledged skill: they have become experts at making the system work properly.
+The adversarial example (red arrow) changes the input for a correctly-classified "orange" data point so that it is incorrectly classified as blue. The workaround (green arrow) changes the input for an "orange" data point that is incorrectly classified as "blue" so that it is classified correctly.
 
-
-#+CAPTION: Schematic view of a machine learning model. The data points are shown with their "true" values of blue or orange, and the background shade marks the areas that the model categorizes as "blue" or "orange". The adversarial example changes a correctly-classified "orange" data point into an incorrectly-classified one, while the /workaround/ changes an incorrectly-classified data point into a correctly classified one. The image was built from  [[https://playground.tensorflow.org][Tensorflow Playground]])
+#+NAME: fig-adversarial-workaround
+#+CAPTION: Schematic view of a machine learning model, showing an adversarial example and a workaround. The image was built from  [[https://playground.tensorflow.org][Tensorflow Playground]])
 [[file:tensorflow-playground.png]]
 
-As just one example, legal scholar Jennifer Raso explored the changing jobs of Ontario case workers when a new automated decision system was introduced. Instead of making their own judgements about client needs, case workers are now to enter data into the system, which would make a decision according to well-defined rules. She [[https://ssrn.com/abstract=3062620][writes about how the social service case workers responded]]: 
+
+Adversarial examples may be novel, but workaroudns have become routine in the automated workplace. Automation shifts decision-making from "front line" workers to computerized systems, but as these systems have entered the workplace, many professionals have learned a new and often unacknowledged skill: they have become experts at making automated decision systems work properly.
+
+As just one example, legal scholar Jennifer Raso explored the changing jobs of Ontario welfare case workers when an automated decision system was introduced in a [[https://ssrn.com/abstract=3062620][prize-winning paper]]. Instead of making their own judgments about client needs, the role of case workers is now to enter data into an algorithmic scoring system (not deep learning), which makes entitlement decisions according to well-defined rules. She writes about how social service case workers responded: 
+
+ #+begin_quote
+While new technologies may attempt to deskill and decentre front-line decision-makers, transforming them into data entry clerks, caseworkers learn how to expertly translate and input client data to produce decisions that more closely match their interpretation of clients' needs and welfare laws. 
+ #+end_quote
+
+The importance of workarounds will be familiar to anyone who has read James C. Scott's [[https://yalebooks.yale.edu/book/9780300078152/seeing-state][Seeing Like a State]]. Heavily designed schemes to improve the human condition assume, and impose, a simplified and idealized representation of working and living that neglects the unruly irregularities of real life. These systems rely on a certain level of workaround to function: people prepared to bend the official rules in order to get their work done. There is a reason that the "work to rule" has been successful in labour disputes as a form of protest.
+
+The American healthcare system is no exception. The rigidities of automated billing systems recently produced a memorable essay by Atul Gawande entitled [[https://www.newyorker.com/magazine/2018/11/12/why-doctors-hate-their-computers][Why Doctors Hate Their Computers]], documenting many of the challenges experienced by physicians as new decision support systems have been introduced, and the ingenious but often costly workarounds they have had to undertake in order to deliver high quality care to their patients.
+
+Will workarounds be needed for the next generation of deep learning medical systems? History suggests that they will. There is a long history of technical innovations that are designed around idealized and simplified models of behaviour, and which underestimate the complexities of "edge cases" in real life. Witness the over-enthusiasm around self-driving cars a couple of years ago, that is now being confronted with the messiness of reality.
+
+From a researcher's point of view, adversarial examples are fascinating cases that raise a multitude of new questions: so much so that several papers /per day/ are now published on the topic. Workarounds, in contrast, are boring. They raise few questions. They are merely machine learning residue---what's left over after the algorithm has made its best attempt, hopefully cleared up by the next iteration of the model.
+
+#+CAPTION: The rise in "adversarial example" publications, from [[https://www.youtube.com/watch?v=sFhD6ABghf8][this talk by David Evans]]. 
+[[file:david-evans-paper-count.png]]
+
+From an end user's point of view, things look different. Faced with getting their job done and a decision system that seems to have taken a bad decision,  they are not in a position to improve the model: they can either follow often a maze of twisty passages in an attempt to get an exception or they can fudge the input and move on. Workarounds are far more interesting than adversarial examples, for all their exoticism. 
+
+* Two sides of the same coin
+
+The previous section presented adversarial attacks and workarounds as opposites, whcih holds true in a laboratory environment where the "correct" result for each individual data point is known and particularly in the classic cases where the "correct" result is, to a human, obvious and uncontroversial. In real-world environments things are different. Machine learning systems are statistical beasts, and however accurate they may be over a large data set, statistics cannot tell us whether any one individual data point is handled correctly or not. In many cases the "true" value for an individual case is not available at all. This difference between the world of the laboratory and that of production environments is noted by the Harvard / MIT researchers:
 
 #+begin_quote
-While new technologies may attempt to deskill and decentre front-line decision-makers, transforming them into data entry clerks, caseworkers learn how to expertly translate and input client data to produce decisions that more closely match their interpretation of clients’ needs and welfare laws. 
+[T]he ground truth in medical diagnoses is often ambiguous, meaning that for many cases no individual human can definitively assign the true label between, say, "benign" and "cancerous" on a photograph of a mole.
 #+end_quote
 
-The idea will be familiar to anyone who has read James C. Scott's [[https://yalebooks.yale.edu/book/9780300078152/seeing-state][Seeing Like a State]]: certain schemes to improve the human condition assume, and impose, a simplified and idealized way of working and living that neglects the unruly irregularities of real life. Managed systems commonly rely on a certain level of workaround to even function: hence the effectiveness of the "work to rule" as a form of protest.
+The figure below is the same as the previous one, but now the two individual data points are coloured grey, showing that we do not know their "true" value. All of a sudden, instead of being opposites, there is no difference between the adversarial example and the workaround.
 
-American healthcare systems have their own workarounds. The rigidities of automated billing systems recently produced a memorable essay by Atul Gawande entitled [[https://www.newyorker.com/magazine/2018/11/12/why-doctors-hate-their-computers][Why Doctors Hate Their Computers]], documenting many of the challenges experienced by physicians as new decision support systems have been introduced.
+(The diagram is misleading in an important way: in a two-dimensional space only a few of the dots are close to a boundary, and that boundarey is with just one other class. It would be reasonable to think that the problem is irrelevant for most inputs that lie comfortably within one region or another. In the many-dimensional space in which machine-learning models operate, it turns out that /all/ dots are close to boundaries with /all other classes/: the situation for machine learning is therefore much /more/ severe than the diagram suggests.)
 
-I said that adversarial attacks and workarounds are opposites, but in another way they are very similar. Surprisingly there is no way to distinguish unambiguously between an adversarial attack and a workaround in real-world environments within machine learning theory. Attempts to define "attacks" refer to "intent", but who is to say what that is? Many examples focus on cases where "ground truth" is unambiguous (a picture of a bus is "obviously" not a picture of a monkey). Examples that are clearly artificial and intentional are reflections of lab research, not of how systems will play out in the wild. Some machine learning practitioners have gone so far as to define "attacks" as any attempt by a subject to influence the outcome of a machine learning system, which makes an attacker of anyone who has put effort into writing their resume in the hopes of getting a job. But don't take all this from me: if you want to hear an expert opinion on this definition problem, see [[https://www.youtube.com/watch?v=sFhD6ABghf8][this talk by David Evans]].
+#+NAME: label:adversarial-example-workaround-2
+#+CAPTION: In a real-world deployment, it may be impossible to distinguish between an input that is "truly orange" and one that is "truly blue". 
+[[file:tensorflow-playground-2.png]]
 
-When it comes down to it, both adversarial examples and workarounds are deliberate changes to inputs in order to generate desired outputs. Machine learning systems are statistical, and however accurate they may be over a large data set, statistics will not say whether any one individual answer is correct. For complex tasks such as medical diagnosis certified "correct" answers are often not available. And if the "correct" answer is not well-defined, who is to say whether an intentional change is correcting a mistake or corrupting a correct answer? 
+Surprisingly, machine learning gives no definition to distinguish unambiguously between an adversarial example and a workaround. A standard definition in papers is something like "an input to a machine learning model that an attacker has intentionally designed to cause the model to make a mistake", but assigning "intent" is outside the scope of machine learning, and a "mistake" is, as we have seen, often not decidable in any individual case.
 
-Will workarounds be needed for the next generation of deep learning medical systems? We can't say for sure yet, but history suggests that they will. There is a long history of technical innovations that are designed around idealized and simplified models of behaviour, and which underestimate the complexities of "edge cases" in real life. Witness the over-enthusiasm around self-driving cars a couple of years ago, that is now being confronted with the messiness of reality.
+Some machine learning practitioners have gone so far as to define "attacks" as any attempt by a subject to influence the outcome of a machine learning system, but that makes an attacker of anyone who has put effort into writing an appealing resume in the hopes of getting a job. Adversarial examples and workarounds are both just optimization attempts: intentional changes to inputs in order to generate desired outputs.
 
-The article is not completely silent on the topic of workaroudns: it does reference a paper from almost 20 years ago titled "[[https://jamanetwork.com/journals/jama/fullarticle/192577][Physician Manipulation of Reimbursement Rules for Patients: Between a Rock and a Hard Place]]", which says this: 
+But don't take all this from me: if you want to hear an expert opinion on the definition problem, see [[https://www.youtube.com/watch?v=sFhD6ABghf8][this keynote talk by David Evans]] (especially the first ten minutes) from which much of the last few paragraphs is taken.
+
+When it comes to medicine, physicians face incentives to engage in workarounds as well as in adversarial attacks. The Science article is not completely silent on the topic of workarounds: it references a survey carried out by the American Medical Association from almost 20 years ago, described in a titled [[https://jamanetwork.com/journals/jama/fullarticle/192577][Physician Manipulation of Reimbursement Rules for Patients: Between a Rock and a Hard Place]], but the remainder of the Science article focuses almost exclusively on the problem of adversarial attacks by healthcare providers. 
+
+The "physician manipulation" article outlines the frustrations physicians face when trying to provide care for their patients:
 
 #+begin_quote
-It has been suggested that some insurers are "gaming" patients and physicians---tricking them into paying for covered services by routinely denying coverage but then approving services that are subsequently appealed, knowing that time and other constraints will prevent some appeals.
+In some cases, physicians may feel trapped between professional obligations to advocate for their patients and conflicting contractual obligations to follow coverage rules. It has been suggested that some insurers are "gaming" patients and physicians---tricking them into paying for covered services by routinely denying coverage but then approving services that are subsequently appealed, knowing that time and other constraints will prevent some appeals.
 #+end_quote
 
-So doctor workarounds may be responses not only to technical deficiencies in the system, but also to real or perceived bad faith on the part of the insurers (or their suppliers) who are responsible for the system itself. And why should doctors have faith in these systems? Big money is at work on both sides, and the incentives for insurance companies to "optimize" is at least as strong as for the doctors. They face incentives to fix inaccuracies that lead to overbilling, but not those blind spots that lead to underpayments; to label edge cases in training sets in such a way as to minimize payments; to redefine payment schedules around the observed behaviour of the systems.
+Any attempt to tackle the threat of adversarial attacks will also penalize workarounds: designing proper rules for machine learning systems starts with recognizing the problems, and an exclusive focus on adversarial attacks fails to do so.
 
-When it comes to interventions, Finlayson et al make two recommendations. The first is to procrastinate: to avoid stifling innovation by prematurely enforcing demands for robustness. The second is to increase supervision of medical practitioners, to check that they do not "tamper" with the data. Such an approach not only neglects any consideration of insurance companies, but it also rules out workarounds. It removes any room for doctors' discretion and judgement, and reduces the role of physician to that of a managed and supervised data entry technician.
+* Governing machine learning
 
-As I've [[https://ssrn.com/abstract=3363342][written elsewhere]], most machine learning systems of any interest are /incentive incompatible./ The subjects who provide the inputs and the consumers of the outputs have different and conflicting interests. And in such an arrangement additional rules are not just likely, but inevitable. The problem with procrastination is that it favours the consumers and, more than anyone, the providers of the system. A natural response to problems is to demand more complete data, better data, and closer supervision of data entry. Without a check on insurance companies, medical machine learning systems will not be a cure for a damaged health system.
+When it comes to interventions, the Harvard / MIT researchers make two recommendations. The first is to procrastinate: to avoid stifling innovation by prematurely enforcing demands for robustness. The second is to increase IT-driven supervision of medical practitioners, storing "hashes" of images to check that they are not "tampered" with during processing. 
+
+To take the second suggestion first: the proposal will crack down on "adversarial attacks" but will also prevent workarounds. As such, it removes room for doctors' discretion and judgement. Good physician performance will be measured by accurate data entry rather than creative problem solving, and such measures would prevent physician pushback against any payment-minimizing moves by insurance companies. It reduces the role of physician from a professional responsible for diagnosis and prescription (which most would see as their primary roles), to that of a managed and supervised data entry technician. Any assessment of medical machine learning must address the potential consequences of deskilling among physicians.
+
+The billing system, whether or not it is driven by deep learning, is a site of tension, at which /all/ parties seek to find their best outcomes. To treat the problems around billing systems as security problems in which the healthcare provider is the most likely attacker is to adopt the perspective of the insurance company or the vendor that provides them with a deep learning system. 
+
+In fairness, the authors do point out that the American medical claims approval process is plagued by many competing financial interests, "providers [i.e. doctors and hospitals] seeking to maximize and payers [insurance companies] seeking to minimize reinbursement", but for the bulk of the article, and in the recommendations, the problem of "attacks" by insurance companies is neglected.
+
+A more productive approach would be to adopt a game-theoretical perspective, where strategic considerations by all parties lead to some equilibrium outcome. As I've [[https://ssrn.com/abstract=3363342][written elsewhere]], most machine learning systems of any interest are /incentive incompatible/, and medical systems are no different. The subjects who provide the inputs and the consumers of the outputs have different and conflicting interests.
+
+In such an arrangement costly governance measures are not just likely, but inevitable, and that leads us to what's wrong with the first recommendation: procrastination. To encourage deployment without proper costing of governance is to underestimate implementation costs: it's building in debt, committing institutions that deploy these systems to unknown but significant future costs, and painting a false picture of efficiency gains. It tilts the cost comparison between physician-diagnosis and machine-diagnosis in favour of the machine (or, more accurately, its vendor), and more-or-less guarantees buyer's remorse.
+
+There is no one-size fits all solution, of course. The right form of governance for EHR-based methods would be different to that for medical image diagnostics. But a prerequisite for any progress must be to acknowledge all the incentives in the system, to attempt to estimate the true costs of implementation, and not to overlook the humble but essential role of the workaround.
 
 * Footnotes
 
 [fn:1] Samuel G. Finlayson, John D. Bowers, Joichi Ito, Jonathan L. Zittrain, Andrew L. Beam, Isaac S. Kohane, "Adversarial attacks on medical machine learning", Science, 22 March 2019, p 1287.
-
-[[bibliographystyle:unsrtnat]]
-[[bibliography:bibliography.bib]]
