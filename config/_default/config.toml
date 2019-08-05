@@ -16,7 +16,7 @@ baseurl = "https://tomslee.github.io/"
 copyright = "Copyright &copy; 2006--{year}"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-7526668-2"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
