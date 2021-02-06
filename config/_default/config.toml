@@ -20,6 +20,13 @@ copyright = ""
 ## Advanced options below ##
 ############################
 
+#TS Front matter suggested at https://gohugo.io/getting-started/configuration/
+# [frontmatter]
+# date = ["date", "publishDate", "lastmod"]
+# lastmod = [":git", "lastmod", "date", "publishDate"]
+# publishDate = ["publishDate", "date"]
+# expiryDate = ["expiryDate"]a
+
 # Get last modified date for content from Git?
 enableGitInfo = false
 
