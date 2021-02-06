@@ -8,7 +8,7 @@ headless = true  # This file represents a page section.
 
 active = true  # Activate this widget? true/false
 
-weight = 60  # Order that this section will appear.
+weight = 20  # Order that this section will appear.
 
 title = "Notes"
 
@@ -69,5 +69,3 @@ subtitle = "An archived copy of a blog I wrote for a few years."
  # CSS class.
  css_class = ""
 +++
-
-Only archived entries for now (Feb 2021)...
