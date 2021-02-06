@@ -2,15 +2,15 @@
 author: Tom Slee
 comments: true
 date: 2017-10-09 19:06:02+00:00
-excerpt: "\n\t\t\t\tI've been doing the Airbnb data collection thing for about four\
+excerpt: I've been doing the Airbnb data collection thing for about four\
   \ years now, off and on, with my first post being on October 19, 2013. It's been\
   \ interesting, rewarding, and useful for quite a few people. But there is a time\
   \ for every season and I think this effort has done what it can, and it's time to\
-  \ move on. \t\t"
+  \ move on."
 layout: post
 link: http://tomslee.net/2017/10/airbnb-data-collection-announcement.html
 slug: airbnb-data-collection-announcement
-title: "\n\t\t\t\tAirbnb data collection: announcement\t\t"
+title: "Airbnb data collection: announcement"
 wordpress_id: 4505
 draft: false
 categories:
