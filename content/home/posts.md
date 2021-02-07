@@ -12,14 +12,14 @@ weight = 20  # Order that this section will appear.
 
 title = "Notes"
 
-subtitle = "An archived copy of a blog I wrote for a few years."
+subtitle = "I may change my mind. Also, an archived copy of a blog I wrote for ten years."
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 2
   
   # Choose how many pages you would like to offset by
   offset = 0

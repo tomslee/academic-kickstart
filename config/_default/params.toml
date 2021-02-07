@@ -97,9 +97,9 @@ phone = ""
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-# These are coordinates for Thomas Slee Drive in Kitchener, Ontario. 
+# These are coordinates for Thomas Slee Drive in Kitchener, Ontario.
 # The map should show with the name centrally placed.
-coordinates = {latitude = "43.37506", longitude = "-80.43170"}
+coordinates = {latitude = "43.37456", longitude = "-80.43575"}
 
 # Directions for visitors to locate you.
 # directions = "My name, my street?"
@@ -166,7 +166,7 @@ sharing = true
 copyright_license = {enable = false, allow_derivatives = false, share_alike = true, allow_commercial = false, notice = "This work is licensed under {license}"}
 
 # Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
-abstract_length = 135
+abstract_length = 0
 
 # Load JS plugins
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
@@ -267,7 +267,7 @@ plugins_js  = []
   #   3: OpenStreetMap (Mapbox)
   engine = 2
   api_key = ""
-  zoom = 17
+  zoom = 18
 
 ############################
 ## Marketing

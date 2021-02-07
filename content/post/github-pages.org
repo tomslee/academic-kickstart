@@ -10,7 +10,7 @@ All posts here will have the category set to /meta/.
 
 * Site setup
 :PROPERTIES:
-:EXPORT_FILE_NAME: site-setup
+:EXPORT_FILE_NAME: 2021-02-07-site-setup
 :EXPORT_DATE: 2021-02-07
 :EXPORT_HUGO_MENU: :menu "notes"
 :EXPORT_TITLE: Site Setup
