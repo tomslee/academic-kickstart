@@ -1,0 +1,36 @@
+#+STARTUP: indent
+#+HUGO_BASE_DIR: ../../
+#+HUGO_SECTION: post
+#+HUGO_WEIGHT: auto
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Meta                                                                :@meta:
+
+All posts here will have the category set to /meta/.
+
+* Site setup
+:PROPERTIES:
+:EXPORT_FILE_NAME: 2021-02-07-site-setup
+:EXPORT_DATE: 2021-02-07
+:EXPORT_HUGO_MENU: :menu "notes"
+:EXPORT_TITLE: Site Setup
+:END:
+
+Configuration and notes to do this again the next time I lose everything.
+
+# more
+
+*** Configuration
+
+The site is set up with:
+- [[https://pages.github.com/][GitHub Pages]], to host the published static content and serve it.
+- [[https://gohugo.io/][Hugo]], to generate the published static content from source.
+- The [[https://themes.gohugo.io/academic/][Academic theme]], even though I'm not an academic, to style the web site presentation.
+- [[https://orgmode.org/][Org mode]], with [[https://ox-hugo.scripter.co/][ox-hugo]], to write the material. Although some files, including this, are written directly in markdown using [[https://www.vim.org/][vim]] or [[https://code.visualstudio.com/][Microsoft VS Code]].
+- I'm currently working on the content in an Ubuntu [[https://docs.microsoft.com/en-us/windows/wsl/][WSL2]] instance on Windows, and using [[https://mobaxterm.mobatek.net/][MobaXTerm]] and/or [[https://github.com/microsoft/terminal][Windows Terminal]] to get at it. I try to confirm that it all works from windows too
+
+*** How to
+
+- Install hugo (extended version), which may need you to install golang.
+- Clone the Academic theme
+-
