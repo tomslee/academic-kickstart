@@ -12,8 +12,7 @@ superuser = true
 #TS role = "This and that"
 
 # Organizations/Affiliations
-#   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-organizations = [ { name = "SAP SE", url = "https://www.sap.com" }, { name = "Independent", url = "http://tomslee.net" } ]
+#   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`. organizations = [ { name = "SAP SE", url = "https://www.sap.com" }, { name = "Independent", url = "http://tomslee.github.io" } ]
 
 # Short bio (displayed in user profile at end of posts)
 bio = "Mainly technology and politics"

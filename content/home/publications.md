@@ -7,8 +7,9 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Essays"
-subtitle = "Some in progress, some complete, a few published elsewhere too."
+title = "Essays" 
+
+subtitle = "Finished essays, or nearly so. Some published elsewhere, some not."
 
 [content]
   # Page type to display. E.g. post, talk, or publication.

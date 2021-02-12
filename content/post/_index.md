@@ -1,4 +1,4 @@
-+++ title = "Notes"
++++ title = "Scraps"
 
 # View.
 #   1 = List
@@ -9,6 +9,7 @@
 view = 1
 
 # Optional featured image (relative to `static/img/` folder).
+
 [header]
 image = ""
 caption = ""
