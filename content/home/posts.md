@@ -10,9 +10,9 @@ active = true  # Activate this widget? true/false
 
 weight = 20  # Order that this section will appear.
 
-title = "Notes"
+title = "Scraps"
 
-subtitle = "I may change my mind. Also, an archived copy of a blog I wrote for ten years."
+subtitle = "Notes to myself, short pieces, works in progress, and dead ends. All subject to revision whenever I feel like it. Also, an archived copy of a blog I wrote for ten years."
 
 [content]
   # Page type to display. E.g. post, talk, or publication.

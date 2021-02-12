@@ -9,7 +9,7 @@
   weight = 40
 
 [[main]]
-  name = "Notes"
+  name = "Scraps"
   url = "#posts"
   weight = 30
 
