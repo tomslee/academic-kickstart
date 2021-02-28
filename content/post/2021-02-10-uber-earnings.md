@@ -2,11 +2,12 @@
 title = "Uber-Optimistic"
 author = ["DESKTOP-L7UL8HD"]
 date = 2021-02-10
-lastmod = 2021-02-12T13:59:20-05:00
+lastmod = 2021-02-28T11:44:13-05:00
+categories = ["uber"]
 draft = false
-weight = 1001
+weight = 2001
 [menu.notes]
-  weight = 1001
+  weight = 2001
   identifier = "uber-optimistic"
 +++
 

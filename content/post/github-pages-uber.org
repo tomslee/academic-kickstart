@@ -8,7 +8,7 @@
 
 All posts here will have the category set to /uber/.
 
-* Uber earnings Q4 2020
+* Uber earnings Q4 2020                                               :@uber:
 :PROPERTIES:
 :EXPORT_FILE_NAME: 2021-02-10-uber-earnings
 :EXPORT_DATE: 2021-02-10

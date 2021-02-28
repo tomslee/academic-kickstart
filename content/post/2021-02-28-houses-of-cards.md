@@ -1,38 +1,49 @@
-#+STARTUP: indent
-#+HUGO_BASE_DIR: ../../
-#+HUGO_SECTION: post
-#+HUGO_WEIGHT: auto
-#+HUGO_AUTO_SET_LASTMOD: t
++++
+title = "Advertising, news, and houses of cards"
+author = ["Tom Slee"]
+date = 2021-02-28
+lastmod = 2021-02-28T13:36:39-05:00
+categories = ["techsoc"]
+draft = false
+weight = 2001
+[menu.notes]
+  weight = 2001
+  identifier = "advertising-news-and-houses-of-cards"
++++
 
-* Technology & Society                                             :@techsoc:
+<div class="ox-hugo-toc toc">
+<div></div>
 
-** Advertising, news, and houses of cards
-:PROPERTIES:
-:EXPORT_FILE_NAME: 2021-02-28-houses-of-cards
-:EXPORT_DATE: 2021-02-28
-:EXPORT_HUGO_MENU: :menu "notes"
-:EXPORT_TITLE: Advertising, news, and houses of cards
-:EXPORT_AUTHOR: Tom Slee
-:EXPORT_OPTIONS: toc:2
-:END:
+<div class="heading">Table of Contents</div>
+
+- [Advertising is everywhere and nowhere](#advertising-is-everywhere-and-nowhere)
+- [Newspaper boundaries](#newspaper-boundaries)
+- [Social media and the news](#social-media-and-the-news)
+- [Coyne again](#coyne-again)
+- [What would social media governance look like?](#what-would-social-media-governance-look-like)
+- [Bundles and subsidies](#bundles-and-subsidies)
+- [What do we lose?](#what-do-we-lose)
+
+</div>
+<!--endtoc-->
 
 State: very rough first draft.
 
 Australia, journalism, social media, house-of-cards governance.
 
-# more
 
-*** Advertising is everywhere and nowhere
+## Advertising is everywhere and nowhere {#advertising-is-everywhere-and-nowhere}
 
 Yesterday's Globe and Mail included two opinion pieces about the dispute between Australia and the social media giants Facebook and Google (henceforth FBG). Andrew Coyne sees it as a matter for the markets: unusually for a long-time journalist he says that newspapers need to deal with the fact that FBG "built a better mousetrap" and up their game. Taylor Owen sees it as an issue of democracy: FBG setting themselves up as global managers of speech, Chinese companies in the background.
 
-Newspapers and social media get their revenue partly (or almost completely in the social media case) by delivering advertising. The advertising delivery industry is unusual in that its product is something nobody wants. There is a reason people speak of subscription models as /alternatives/ to advertising (pay a subscription, see fewer or no ads); there are no business models where we pay more to see more ads. We go to newspapers and social media for something else, and put up with advertisements in order to get it.
+Newspapers and social media get their revenue partly (or almost completely in the social media case) by delivering advertising. The advertising delivery industry is unusual in that its product is something nobody wants. There is a reason people speak of subscription models as _alternatives_ to advertising (pay a subscription, see fewer or no ads); there are no business models where we pay more to see more ads. We go to newspapers and social media for something else, and put up with advertisements in order to get it.
 
-The companies make their money by delivering advertising, but you will not see this anywhere in their public mission statements. /Google:/ "Our company mission is to organize the world's information and make it universally accessible and useful." "Facebook's mission is to give people the power to build community and bring the world closer together." /The New York Times:/ "Our mission is simple: We seek the truth and help people understand the world." /The Globe and Mail:/ "To inspire and inform Canadians through courageous, empathetic, and honest journalism." /The Guardian:/ "Our values were set out by CP Scott in his centenary leader in 1921. They are: honesty, integrity, courage, fairness, and a sense of duty to the reader and the community."
+The companies make their money by delivering advertising, but you will not see this anywhere in their public mission statements. _Google:_ "Our company mission is to organize the world's information and make it universally accessible and useful." "Facebook's mission is to give people the power to build community and bring the world closer together." _The New York Times:_ "Our mission is simple: We seek the truth and help people understand the world." _The Globe and Mail:_ "To inspire and inform Canadians through courageous, empathetic, and honest journalism." _The Guardian:_ "Our values were set out by CP Scott in his centenary leader in 1921. They are: honesty, integrity, courage, fairness, and a sense of duty to the reader and the community."
 
 Delivering advertising is in direct conflict with the stated mission of each of these companies, all of which appeal to integrity and independence from financial manipulation. They can only manage both if they can sustain a clear boundary between advertising and "mission". We see this conflict play out in continual policing and redrawing of this boundary.
 
-*** Newspaper boundaries
+
+## Newspaper boundaries {#newspaper-boundaries}
 
 Keeping the boundary intact has been particularly important to newspapers, because (as Coyne and Owen's articles make clear) journalism is both an industry and a democractic institution.
 
@@ -65,7 +76,8 @@ If there is a lesson here it is that we cannot trust "values" or "culture", or b
 
 News governance is like a house of cards: it's not that any card is good or bad, but that there is a continual effort to keep them balancing each other as we built it higher and higher. Move one, and the other card will fall over. The existing landscapes of media governance in different countries are incomplete houses of cards, but we should not lose track of the fact that at least a layer or two is in place.
 
-*** Social media and the news
+
+## Social media and the news {#social-media-and-the-news}
 
 The social media industries set out to demolish the old industries, confident that they could do a better job of providing what society wants while also making money. Get rid of the gatekeepers, democratize the public square. Move fast and break things.
 
@@ -79,7 +91,8 @@ Beyond a certain point doesn't help, when developing governance tools, to look m
 
 If social media has built a better mousetrap, as Andrew Coyne suggests, it's not because it has done a better job of giving us the news we want. It's done a better job of making advertising tolerable. One of the ways that newspapers make a living is, as said above, by bundling lots of non-news content along with the straight news.
 
-*** Coyne again
+
+## Coyne again {#coyne-again}
 
 Let's go back to Coyne and Owen. The rules for journalism and news are different to those for other forms of speech. The press has rights and responsibilities that are peculiar to it, however imperfectly this system works. We must talk, not about "content" or "information", but news and journalism and how this public good gets produced.
 
@@ -93,7 +106,8 @@ The idea is that FPB are connectors, bringing people to the news. "Facebook and 
 
 Everyone selling advertising needs something to sell it against. Google sells ads against YouTube, against search results, against email, and acts as a global online ad broker to sell against everyone else's content too. Similarly with Facebook. No longer is advertising the place for Leopold Bloom, a famous fictional nobody, walking the streets of Dublin to make a living: now advertising runs the world.
 
-*** What would social media governance look like?
+
+## What would social media governance look like? {#what-would-social-media-governance-look-like}
 
 Once we get rid of the idea of "content" or "speech" we have to realise that we are dealing with many different governance problems, each of which demands its own intricate framework of opposing and constantly-shifting pressures to establish anything like a balance.
 
@@ -111,7 +125,8 @@ Advertising to children, to people in distress, to other vulnerable people, to p
 
 (Here is something I don't understand. When we notice bias in ads, it often seems unimportant. Displaying this advertisement or that probably does not qualify as a decision with significant impact on the individual, for example under GDPR information processing rules. Advertisements do not seem to have the weight to support the globally important companies and upheavals that are taking place.)
 
-*** Bundles and subsidies
+
+## Bundles and subsidies {#bundles-and-subsidies}
 
 Newspapers work by cross-subsidising the material they publish. By bundling different kinds of thing together, they can survive on a combination of subscriptions and ads. Maybe you throw out the lifestyle section and I throw out the sports, but they come together as part of the bundle. Pick that bundle apart and the whole enterprise fails. The scoops give the enterprise standing, but it is not enough to sustain the newspapers by themselves.
 
@@ -129,9 +144,10 @@ What we have learned over the last decade is that the "community governance" mod
 
 As we have seen with news, drawing eyeballs is not enough of a measure of success.
 
-*** What do we lose?
 
-*What do we lose if we lose newspapers? We lose a fragile and imperfect but valuable house of cards. We don't just lose a product to be replaced by another -- a BlackBerry to be replaced by an iPhone, an old mousetrap replaced by a better. What we lose is a system of governance, and the platforms have nothing with which to replace it.*
+## What do we lose? {#what-do-we-lose}
+
+**What do we lose if we lose newspapers? We lose a fragile and imperfect but valuable house of cards. We don't just lose a product to be replaced by another -- a BlackBerry to be replaced by an iPhone, an old mousetrap replaced by a better. What we lose is a system of governance, and the platforms have nothing with which to replace it.**
 
 There are many things that can be done better in other ways, but right now all the social media promises are monolithic, and that is in itself a failure.
 
@@ -144,34 +160,3 @@ Let's get more specific about the problems with news.
 We know there are problems with mainstream media, and the consensus it has represented. Some of the most valuable voices come from outside this realm: committed journalism with unconventional viewpoints or specialist points of view. THe mainstream media has been one distribution system among many. Alternative media has always been important, and not just as an irritant.
 
 So now what has changed? Those institutions that restrain the corrupting effects of money and ulterior agendas are not present when Facebook and Google relay the news. There is nothing to restrain the interests of money. It's not a matter of free speech, it's a matter of accountability and what countervailing mechanisms exist.
-* Meta                                                                :@meta:
-
-All posts here will have the category set to /meta/.
-
-* Site setup
-:PROPERTIES:
-:EXPORT_FILE_NAME: 2021-02-07-site-setup
-:EXPORT_DATE: 2021-02-07
-:EXPORT_HUGO_MENU: :menu "notes"
-:EXPORT_TITLE: Site Setup
-:EXPORT_AUTHOR: Tom Slee
-:END:
-
-Configuration and notes to do this again the next time I lose everything.
-
-# more
-
-*** Configuration
-
-The site is set up with:
-- [[https://pages.github.com/][GitHub Pages]], to host the published static content and serve it.
-- [[https://gohugo.io/][Hugo]], to generate the published static content from source.
-- The [[https://themes.gohugo.io/academic/][Academic theme]], even though I'm not an academic, to style the web site presentation.
-- [[https://orgmode.org/][Org mode]], with [[https://ox-hugo.scripter.co/][ox-hugo]], to write the material. Although some files, including this, are written directly in markdown using [[https://www.vim.org/][vim]] or [[https://code.visualstudio.com/][Microsoft VS Code]].
-- I'm currently working on the content in an Ubuntu [[https://docs.microsoft.com/en-us/windows/wsl/][WSL2]] instance on Windows, and using [[https://mobaxterm.mobatek.net/][MobaXTerm]] and/or [[https://github.com/microsoft/terminal][Windows Terminal]] to get at it. I try to confirm that it all works from windows too
-
-*** How to
-
-- Install hugo (extended version), which may need you to install golang.
-- Clone the Academic theme
--
