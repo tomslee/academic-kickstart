@@ -2,20 +2,20 @@
 title = "Uber-Optimistic"
 author = ["DESKTOP-L7UL8HD"]
 date = 2021-02-10
-lastmod = 2021-02-28T11:44:13-05:00
+lastmod = 2021-03-28T07:20:11-04:00
 categories = ["uber"]
 draft = false
-weight = 2001
+weight = 1002
 [menu.notes]
-  weight = 2001
+  weight = 1002
   identifier = "uber-optimistic"
 +++
 
 As Uber loses more money, CEO Dara Khosrowshahi continues cross his fingers and dream.
 
-Uber [just announced](https://investor.uber.com/news-events/news/press-release-details/2021/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2020/default.aspx) its Q4 2020 earnings on February 10: a net loss of $968 million in the quarter, or an "Adjusted EBITDA loss of $(454) million".
+Uber [just announced](https://investor.uber.com/news-events/news/press-release-details/2021/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2020/default.aspx) its Q4 2020 earnings on February 10: a net loss of $968 million, or an "Adjusted EBITDA loss of $(454) million".
 
-Here's Uber's revenue (blue), profitability (orange) and also number of trips (green).
+Here's Uber's revenue (blue), profitability (orange) and number of trips (green).
 
 {{< figure src="/ox-hugo/uber-earnings-2020-q4.png" >}}
 

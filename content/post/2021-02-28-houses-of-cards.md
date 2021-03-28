@@ -2,7 +2,7 @@
 title = "Advertising, news, and houses of cards"
 author = ["Tom Slee"]
 date = 2021-02-28
-lastmod = 2021-02-28T13:36:39-05:00
+lastmod = 2021-03-19T11:45:04-04:00
 categories = ["techsoc"]
 draft = false
 weight = 2001
@@ -16,8 +16,10 @@ weight = 2001
 
 <div class="heading">Table of Contents</div>
 
-- [Advertising is everywhere and nowhere](#advertising-is-everywhere-and-nowhere)
-- [Newspaper boundaries](#newspaper-boundaries)
+- [Advertising: give the people what they don't want](#advertising-give-the-people-what-they-don-t-want)
+- [In conflict with independence and authenticity](#in-conflict-with-independence-and-authenticity)
+- [Governance: not a classification problem](#governance-not-a-classification-problem)
+    - [Lessons](#lessons)
 - [Social media and the news](#social-media-and-the-news)
 - [Coyne again](#coyne-again)
 - [What would social media governance look like?](#what-would-social-media-governance-look-like)
@@ -29,59 +31,82 @@ weight = 2001
 
 State: very rough first draft.
 
-Australia, journalism, social media, house-of-cards governance.
+
+## Advertising: give the people what they don't want {#advertising-give-the-people-what-they-don-t-want}
+
+We are in a strange place when two of the world's most valuable and influential companies make their money by delivering a product that nobody wants. Facebook and Google are not alone: advertising has long been a business model for media organizations of all kinds, but that only emphasizes the peculiarity of the model. We go to these companies for something else, and _put up_ with advertising in order to get it.
+
+The conflict---between providing what we do want and delivering ads we don't---is made public in the companies' mission statements.
+
+Most companies have a "mission" that matches the way they make money. In the UK, Greggs makes its money by selling sandwiches, and its [mission](https://corporate.greggs.co.uk/at-a-glance/vision-and-values) is to "become the customer's favourite for food-on-the-go". This seems reasonable and to some extent reassuring for the customer. Greggs has an interest in making sandwiches that are good value if it's going to carry on making money.
+
+But advertising companies are different. The way they make money appears nowhere in their public mission statements.
+
+-   _Google:_ "Our company mission is to organize the world's information and make it universally accessible and useful."
+-   _Facebook:_ "Facebook's mission is to give people the power to build community and bring the world closer together."
+-   _Twitter:_ "The mission we serve as Twitter, Inc. is to give everyone the power to create and share ideas and information instantly without barriers. Our business and revenue will always follow that mission in ways that improve – and do not detract from – a free and global conversation."
+
+And news companies:
+
+-   _The New York Times:_ "Our mission is simple: We seek the truth and help people understand the world."
+-   _The Globe and Mail:_ "To inspire and inform Canadians through courageous, empathetic, and honest journalism."
+-   _The Guardian:_ "Our values were set out by CP Scott in his centenary leader in 1921. They are: honesty, integrity, courage, fairness, and a sense of duty to the reader and the community."
 
 
-## Advertising is everywhere and nowhere {#advertising-is-everywhere-and-nowhere}
+## In conflict with independence and authenticity {#in-conflict-with-independence-and-authenticity}
 
-Yesterday's Globe and Mail included two opinion pieces about the dispute between Australia and the social media giants Facebook and Google (henceforth FBG). Andrew Coyne sees it as a matter for the markets: unusually for a long-time journalist he says that newspapers need to deal with the fact that FBG "built a better mousetrap" and up their game. Taylor Owen sees it as an issue of democracy: FBG setting themselves up as global managers of speech, Chinese companies in the background.
+Delivering advertising is not just different to the stated mission of each of these companies, it's in conflict. We look to news organizations for integrity and independence from financial manipulation. We look to social media companies for authenticity. As paid content, advertising plays by completely different rules.
 
-Newspapers and social media get their revenue partly (or almost completely in the social media case) by delivering advertising. The advertising delivery industry is unusual in that its product is something nobody wants. There is a reason people speak of subscription models as _alternatives_ to advertising (pay a subscription, see fewer or no ads); there are no business models where we pay more to see more ads. We go to newspapers and social media for something else, and put up with advertisements in order to get it.
+The answer to this conflict has been to create a clear boundary between advertising and "mission".
 
-The companies make their money by delivering advertising, but you will not see this anywhere in their public mission statements. _Google:_ "Our company mission is to organize the world's information and make it universally accessible and useful." "Facebook's mission is to give people the power to build community and bring the world closer together." _The New York Times:_ "Our mission is simple: We seek the truth and help people understand the world." _The Globe and Mail:_ "To inspire and inform Canadians through courageous, empathetic, and honest journalism." _The Guardian:_ "Our values were set out by CP Scott in his centenary leader in 1921. They are: honesty, integrity, courage, fairness, and a sense of duty to the reader and the community."
+This clear boundary creates problems for advertising, because it makes advertisements easy to ignore, and ads we ignore have no value. The result is that advertising companies continually blur the line between the two.
 
-Delivering advertising is in direct conflict with the stated mission of each of these companies, all of which appeal to integrity and independence from financial manipulation. They can only manage both if they can sustain a clear boundary between advertising and "mission". We see this conflict play out in continual policing and redrawing of this boundary.
+In some cases the blurring is simply annoying: product placements in TV sitcomes, sponsored content in "influencer" social media feeds, trailer ads during TV shows, "advertorial" content in the lifestyle sections of newspapers.
+
+But in the case of news and of social media the blurring has more consequence, because of the conflict between these types of speech and paid advertising. As a result, the boundaries are drawn, lines are crossed, lines redrawn, and so on.
+
+Keeping the boundary intact has been particularly important to newspapers, because a "free press" is not just an industry, it has an explicit role in many democratics countries as a means of preserving a variety of perspectives and holding power to account. The news industry gets special consideration because of the importance of a free and independent press: protection of sources, access to government, some level of immunity from prosecution. To justify this special treatment they have responsibilities to present the news fairly.
 
 
-## Newspaper boundaries {#newspaper-boundaries}
+## Governance: not a classification problem {#governance-not-a-classification-problem}
 
-Keeping the boundary intact has been particularly important to newspapers, because (as Coyne and Owen's articles make clear) journalism is both an industry and a democractic institution.
+The partial, flawed, but still important, ways in which the news industry / free press has struggled around these boundaries helps provide a perspective on the challenge facing social media.
 
-Journalists and the news industry get special consideration because of the importance of a free and independent press: protection of sources, access to government, some level of immunity from prosecution. To justify this special treatment they have responsibilities to present the news fairly.
+Let's start at the top. There are independent regulators like the Independent Press Standards Organization in the UK or the National Newsmedia Council in Canada to provide some level of accountability. But a self-regulating body (Canada) is vulnerable to corruption in one direction, while a government body is vulnerable to state interests. IPSO is  an arms-length regulator, and this is where many countries have settled: an uneasy middle, being pressed from both sides.
 
-Taking a look at the partial and flawed, but still important, ways in which the news industry / free press has struggled around these boundaries helps provide a perspective on the challenge facing social media.
+At the level of individual newspapers, there is a tradition of editorial independence from publishers, which is supposed to set up a boundary between the money side of the business separate and the integrity of the mission. Many newspapers now also employ an ombudsperson to act as a voice for the reader.
 
-There are regulators like the Independent Press Standards Organization in the UK or the National Newsmedia Council in Canada to provide some level of accountability. But a self-regulating body (Canada) is vulnerable to corruption in one direction, while a government body is vulnerable to state interests. IPSO is  an arms-length regulator, and this is where many countries have settled: an uneasy middle, being pressed from both sides.
+At a finer scale, boundaries are also built into the physical organization of the newspaper itself. News runs on the front pages, opinion is in its own section near the back, further divided into editorials giving the "opinion of the newspaper" and op-eds giving independent columnists space to debate their views.
 
-Organizationally, newspapers have established a tradition of editorial independence from publishers, supposed to set up a boundary between the money side of the business separate and the integrity of the mission.
+But even this is not always enough. Sometimes a complex news story, or a scoop of particular importance, will call out for commentary. Then "analysis" or "editorial opinion" may encroach onto the news pages. The boundary is then propped up by subheads ("Editorial Analysis") and even distinct typesetting -- it has been common to typeset opinion with ragged right, and news as justified.
 
-Many newspapers also employ an ombudsperson to act as a voice for the reader.
+This maze of conventions, norms, standards, regulations and laws, each with their own accompanying institutions to manage them, still does not exhaust what is needed to manage the conflict between advertising and a free press.
 
-The boundaries are also built into the organization of the newspaper itself: news on the front pages, opinion near the back, further divided into editorials giving the "opinion of the newspaper" and op-eds giving independent columnists space to debate their views.
+News organizations face incentives to stretch the boundaries of "news", to abuse the protections and traditions of journalism to deliver this material, along with more advertising, and pull in more money.
 
-The tensions are dynamic and continue to be stressed. All these institutions are flawed and imperfect.
+So we get the phone hacking scandal at News International, in which journalists undertook illegal and corrupt practices, asserting that their right as part of a free press to act in the public interest extended to delivering celebrity stories, digging up details on people who were part of real news stories, and hacking the phone of murdered schoolgirl Milly Dowler.
 
-Sometimes a news story will call out for commentary, so "analysis" or "editorial opinion" encroaches into the news pages, the boundary being propped up by subheads ("Editorial Analysis") and even distinct typesetting -- it has been common to typeset opinion with ragged right, and news as justified.
+Managing this "speech" demanded public outrage, the Levison public inquiry, the closing of _The News of the World_, arrests and convictions of Murdoch employees including an editor, the replacement of the Press Complaints Commission, and more.
 
-Newspapers have long taken on a mandate that goes far beyond "news" in order to bring in more revenue: arts, sports, lifestyle and other material, where the boundaries between advertising and independent content have been policed in a more relaxed fashion.
+From regulation to self-regulatory rules to norms to typographic conventions, the boundary-drawing mechanisms are flawed and imperfect, but together they provide a complex, multi-layered system that helps maintain an independent press in many countries.
 
-News organizations always want to stretch the boundaries of "news" to include material with wide appeal (and deliver more advertising), and will use and abuse the protections and traditions of journalism to accomplish their goals. So we get the phone hacking scandal at News International, in which journalists undertook illegal and corrupt practices in pursuit of celebrity stories (news?) and pursued those who were part of real news stories, including hacking the phone of murdered schoolgirl Milly Dowler.
 
-These tensions at all levels have continued to play out in the context of physical newspapers, and are tied to that medium. The boundaries have been redrawn, walls put in place, and thedjsadlak
-en they get pushed and stretched.
+### Lessons {#lessons}
 
-The public has a role to play here too, by virtue of its support. The abandonement of the News Of The World in the face of the hacking scandal led to the collapse of the newspaper.
+One lesson of the media regulation picture is that the problem is not one of classification, which is one reason why it is not a problem that automated methods can solve. There is no rule that says what is acceptable and what is not: the landscape evolves over time through a series of individual cases, each challenged, disputed, and argued over. The next section explores this in more detail.
 
-If there is a lesson here it is that we cannot trust "values" or "culture", or by setting bad guys against good guys. The pressures of commerce are too great on one side, and the temptations of censorship too strong on the other. An uneasy peace is perhaps the best we can hope for.
+Another lesson is that we cannot look to "values" or "culture" or to putting good guys in charge, to manage even this one sliver of the "speech" pie. The pressures of commerce are too great on one side, and the temptations of censorship too strong on the other. An uneasy peace is perhaps the best we can hope for.
 
-News governance is like a house of cards: it's not that any card is good or bad, but that there is a continual effort to keep them balancing each other as we built it higher and higher. Move one, and the other card will fall over. The existing landscapes of media governance in different countries are incomplete houses of cards, but we should not lose track of the fact that at least a layer or two is in place.
+News governance is like a house of cards: it makes no sense to think of good cards or bad. The constuction is a continual effort to balance each card with another as we build the house higher and higher. Move one, and other cards fall over. The existing landscapes of media governance in different countries may be incomplete houses of cards, but we should not lose track of the fact that what there is comes from decades, in some cases centuries, of continual tension and conflict at every level.
 
 
 ## Social media and the news {#social-media-and-the-news}
 
-The social media industries set out to demolish the old industries, confident that they could do a better job of providing what society wants while also making money. Get rid of the gatekeepers, democratize the public square. Move fast and break things.
+The social media industries set out to demolish the old industries, confident that they could do a better job of providing what society wants while also making money. Down with the gatekeepers! Democratize the public square! Move fast and break things!
 
-The governance problems have appeared, as they do with traditional journalism, at every level. IThis is not surprising because the conflicts are the same. But the reason social media companies have succeeded at advertising is the same reason they are failing in other ways: they have ambitions that go far beyond those of the news media, even those of the Murdoch empire. They want to universalize content: one platform on which to access the world.
+But 15 years after the founding of Facebook and YouTube, governance problems have appeared, as they do with traditional journalism, at every level. "Fake news",   This is not surprising, because the conflicts are the same. But the case of social media is more important, because of their global reach and unprecedented audience sizes.
+
+Social media companies have succeeded at advertising for the same reason they are failing in other ways: they have ambitions that go far beyond those of the news media, even those of the Murdoch empire. They want to universalize content: one platform on which to access the world.
 
 The problems start with the word "content", as if there is a single set of problems that must be solved to deliver content properly. Different forms of "content" demand different balancing acts. No matter how sophisticated the machine learning behind them, the governance rules they are putting in place are crude and will fail (see below). They are based on statistical models that will fail at the edges, which introduce new incentives to shift boundaries and invalidate their own recommendations.
 
@@ -89,7 +114,7 @@ Beyond a certain point doesn't help, when developing governance tools, to look m
 
 (It does not help that Mark Zuckerberg and others have a naive understanding of how language works: that we have a pre-verbal "thought" which we then express.)
 
-If social media has built a better mousetrap, as Andrew Coyne suggests, it's not because it has done a better job of giving us the news we want. It's done a better job of making advertising tolerable. One of the ways that newspapers make a living is, as said above, by bundling lots of non-news content along with the straight news.
+If social media has built a better mousetrap, as commentators such as _The Globe and Mail's_ Andrew Coyne suggest, it's not built a better news-delivering mousetrap, it has built a better advertising-delivering mousetrap. One of the ways that newspapers make a living is, as said above, by bundling lots of non-news content along with the straight news; Facebook and Google have massively extended the range of experience that can be bundled together with advertising, and that is not the same thing.
 
 
 ## Coyne again {#coyne-again}
